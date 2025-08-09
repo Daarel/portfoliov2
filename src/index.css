@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* colors (monochromatic) */
+  --color-primary-blue: #1178ec;
+  --color-secondary-blue: #4a99f2;
+  --color-bright-blue: #85baf6;
+  --color-creamy-white: #fdfdfd;
+  --color-off-white: #fafafa;
+  --color-light-gray: #e0e0e0;
+  --color-soft-gray: #b3b3b3;
+  --color-dark-gray: #121212;
+
+  /* font */
+  --font-sans: "DM Sans", sans-serif;
+}
+
+@layer base {
+  body,
+  html {
+    @apply m-0 p-0 w-full text-[var(--color-off-white)] font-[var(--font-sans)] scroll-smooth overflow-x-hidden bg-[var(--color-dark-gray)];
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-evenly {
+    @apply flex justify-evenly items-center;
+  }
+}
+
+@layer components {
+  .navLinks {
+    @apply flex flex-row justify-center items-center gap-5;
+  }
+}
