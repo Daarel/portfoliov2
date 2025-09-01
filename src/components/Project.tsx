@@ -13,6 +13,7 @@ const Project: FC = () => {
     gsap.from(split.words, {
       opacity: 0,
       y: 50,
+      filter: "blur(5px)",
       stagger: 0.05,
       duration: 0.6,
       ease: "power2.out",
@@ -26,6 +27,7 @@ const Project: FC = () => {
     gsap.from(paragraph2Ref.current, {
       opacity: 0,
       y: 50,
+      filter: "blur(5px)",
       duration: 0.6,
       ease: "power2.out",
       scrollTrigger: {
@@ -38,7 +40,7 @@ const Project: FC = () => {
   }, []);
 
   return (
-    <section className="h-[150vh] bg-[var(--color-creamy-white)]">
+    <section className="h-[250vh] bg-[var(--color-creamy-white)]">
       <div className="flex-evenly h-1/3">
         <p
           ref={paragraphRef}
@@ -61,7 +63,9 @@ const Project: FC = () => {
       <div className="flex flex-col items-center justify-center gap-3">
         <hr className="w-[1040px] text-[var(--color-soft-gray)]" />
         <Projects title="CANTEENAPP" url="" />
-        <Projects title="Cocktail" url="" />
+        <Projects title="MIXMOTION" url="" />
+        <Projects title="DUMMY 1" url="" />
+        <Projects title="DUMMY 2" url="" />
       </div>
     </section>
   );

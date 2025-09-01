@@ -41,7 +41,7 @@ const TextSlider: FC = () => {
   }, []);
 
   return (
-    <div className="absolute top-[calc(100vh-350px)]">
+    <div className="absolute top-[calc(100vh-350px)] select-none">
       <div ref={slider} className="relative whitespace-nowrap">
         <p
           ref={firstText}

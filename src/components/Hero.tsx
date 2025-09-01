@@ -6,7 +6,7 @@ import TextSlider from "./TextSlider";
 const Hero: FC = () => {
   return (
     <main className="relative flex h-[100vh] overflow-hidden">
-      <div className="flex-evenly absolute top-52 left-0 h-24 w-56 flex-row rounded-r-full bg-[var(--color-off-white)]">
+      <div className="flex-evenly absolute top-44 left-0 h-24 w-56 flex-row rounded-r-full bg-[var(--color-off-white)]">
         <p className="ml-2 w-24 text-xl font-semibold text-[var(--color-dark-gray)]">
           Based in Jakarta
         </p>

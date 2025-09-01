@@ -12,7 +12,7 @@ const Projects: FC<ProjectsProps> = ({ title, url }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="block my-10 ml-10 text-6xl tracking-wider text-[var(--color-dark-gray)]"
+        className="block py-10 ml-10 text-6xl tracking-wider text-[var(--color-dark-gray)]"
       >
         {title}
       </a>
